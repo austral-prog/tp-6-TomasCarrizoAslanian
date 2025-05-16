@@ -9,19 +9,19 @@ def remove_elements(list_to_remove_elements):
     return lista
 
 def add_elements(list_to_add_elements):
-    list_to_add_elements.append('Yellow')
-    list_to_add_elements.insert(0,'Pink')
+    list_to_add_elements.insert(0,"Pink")
+    list_to_add_elements.append("Yellow")
     return list_to_add_elements
-print(add_elements(['Red', 'Green', 'White', 'Black')]
+print(add_elements(['Red', 'Green', 'White', 'Black']))
 
 def is_empty(list_to_check):
-    return len(list_to_check) == 0
+        return len(list_to_check) ==0
 
 
 def check_lists(list_to_compare1, list_to_compare2):
-    if len(list_to_compare1) >= 3 and len(list_to_compare2) >= 3:
+    if len(list_to_compare1) >=3 and len(list_to_compare2) >=3:
         return list_to_compare1[2] == list_to_compare2[2]
-    else:
+    else: 
         return False
 
 def list_of_lists(list_of_lists_to_modify):
