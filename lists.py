@@ -1,17 +1,18 @@
 def remove_elements(list_to_remove_elements):
-    lista1 = list_to_remove_elements[:]
-    if len(lista1) > 5:
-        del lista1[5]
-    if len(lista1) > 4:
-        del lista1[4]
-    if len(lista1) > 0:
-        del lista1[0]
-    return lista1
+    lista = list_to_remove_elements[:]
+    if len(lista) >5:
+        del lista[5]
+    if len(lista) >4:
+        del lista[4]
+    if len(lista) >0:
+        del lista[0]
+    return lista
 
 def add_elements(list_to_add_elements):
     list_to_add_elements.append('Yellow')
     list_to_add_elements.insert(0,'Pink')
     return list_to_add_elements
+print(add_elements(['Red', 'Green', 'White', 'Black')]
 
 def is_empty(list_to_check):
     return len(list_to_check) == 0
@@ -19,7 +20,7 @@ def is_empty(list_to_check):
 
 def check_lists(list_to_compare1, list_to_compare2):
     if len(list_to_compare1) >= 3 and len(list_to_compare2) >= 3:
-        return list_to_compare1[2] == list_to_compare2[2]:
+        return list_to_compare1[2] == list_to_compare2[2]
     else:
         return False
 
